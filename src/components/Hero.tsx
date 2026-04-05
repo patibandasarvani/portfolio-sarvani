@@ -47,7 +47,6 @@ const Hero: React.FC = () => {
           </motion.div>
 
           <motion.h1
-            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
             className={`text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r ${
