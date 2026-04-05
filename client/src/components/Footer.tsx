@@ -60,6 +60,23 @@ const Footer: React.FC = () => {
               Made with React, Node.js, MongoDB, and Tailwind CSS
             </p>
           </motion.div>
+          
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.4 }}
+            className="mt-6 pt-4 border-t border-gray-700"
+          >
+            <p className={`text-lg font-medium bg-gradient-to-r ${
+              darkMode 
+                ? 'from-purple-400 to-pink-400' 
+                : 'from-purple-600 to-pink-600'
+            } bg-clip-text text-transparent`}
+            >
+              Thanks for visiting my portfolio!
+            </p>
+          </motion.div>
         </motion.div>
       </div>
     </footer>
